@@ -51,9 +51,7 @@ Docker allows you to run the package of software needed to run Jupyter with Pyth
     ```
     http://127.0.0.1:8888/?token=6f15d26cbb55b45fc59e0d3b58ada954f8e2bf8138c66846
     ```
-6. Open the link in your web browser. If you are successful you will see Jupyter start and it will show you:
-![Front screen of the notebook](media/jupyter-front-screen.png).
-You will find all the scripts in the work/notebooks folder.
+6. Open the link in your web browser. You will find all the scripts in the work/notebooks folder.
 
 ### Finding the Notebook link for an already running docker container.
 Once your Docker container is running you can safely close the command line terminal that was used to start it. This will not stop the running container. If you now need to find the URL to the Jupyter notebook again you can find it in the container logs which are available through the Docker dashboard. On Windows right click on the Docker Desktop and open the Dashboard.
