@@ -1,3 +1,6 @@
+# Don't save the temporary downloads to the repository.
+notebooks/temp/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

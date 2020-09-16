@@ -15,6 +15,7 @@ Note: At this stage we only have a few example scripts. More will be added in th
 | -------------| ------- | ------------- |
 | 1. Plot AIMS eReefs data as a map from OpeNDAP service | AIMS eReefs aggregate model data | [Notebook (Jupyter)](/notebooks/1-plot-aims-ereefs-map-data.ipynb) |
 | 2. Plot AIMS eReefs time plot from OpeNDAP service | AIMS eReefs aggregate model data |[Notebook (Jupyter)](/notebooks/2-plot-aims-ereefs-time-plot.ipynb) |
+| 3. Processing the data from the AIMS eReefs extraction tool - Wind and currents | AIMS eReefs data extraction tool | [Notebook (Jupyter)](/notebooks/3-extraction-tool-data-wind-vs-current.ipynb) |
 
 ### Raw CSIRO eReefs model data
 After the CSIRO eReefs models are generated they made available publicly on the [NCI THREDDS service](https://dapds00.nci.org.au/thredds/catalogs/fx3/catalog.html). This makes the data available in two formats. You can download the data in [NetCDF](https://www.unidata.ucar.edu/software/netcdf/docs/netcdf_introduction.html) format using HTTPS, which can be done using a web browser or a download script, or you can use the [OpeNDAP](https://docs.opendap.org/index.php/QuickStart) service to access the data dynamically in a programming environment. OpeNDAP allows a program to pull sections of data from the service without downloading all the data first. You can pull data using OpeNDAP using libraries in most programming languages. 
@@ -29,7 +30,7 @@ The AIMS eReefs platform takes the raw CSIRO eReefs data and generates aggregate
 Note: At this time the AIMS eReefs THREDDS OpeNDAP service only provides access end points for individial NetCDF files, not whole time sequences. As a result the OpeNDAP end points correspond to typically only one month of data. We are working to join all the months of data into a single service that allows you to access any date, not just a month's worth.
 
 ### AIMS eReefs data extraction tool time series data
-The [AIMS data extraction tool](https://extraction.ereefs.aims.gov.au/) allows users to extract time series data from the raw CSIRO eReefs model data at a set of locations specified by a CSV file. This service operates off the raw model data to provide the highest temporal resolution available. This service also allows the user to perform temporal aggregation on the data if needed. This aggregation then provides summary statistics for each time step.
+The [AIMS eReefs data extraction tool](https://extraction.ereefs.aims.gov.au/) allows users to extract time series data from the raw CSIRO eReefs model data at a set of locations specified by a CSV file. This service operates off the raw model data to provide the highest temporal resolution available. This service also allows the user to perform temporal aggregation on the data if needed. This aggregation then provides summary statistics for each time step.
 
 ## Installation and setup
 The scripts are created as [Jupyter Notebooks](https://jupyter.org/). If you would like to run the notebooks in your
