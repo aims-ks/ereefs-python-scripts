@@ -7,6 +7,6 @@ RUN conda install -c conda-forge cartopy
 ENV CARTOPY_DIR=/home/jovyan/.cartopy-data
 ENV NE_PHYSICAL=${CARTOPY_DIR}/shapefiles/natural_earth/physical
 RUN mkdir -p ${NE_PHYSICAL}
-RUN wget https://naciscdn.org/naturalearth/50m/physical/ne_50m_coastline.zip -P ${CARTOPY_DIR}
+RUN wget https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_coastline.zip -P ${CARTOPY_DIR}
 RUN unzip ${CARTOPY_DIR}/ne_50m_coastline.zip -d  ${NE_PHYSICAL}
 RUN rm ${CARTOPY_DIR}/*.zip
